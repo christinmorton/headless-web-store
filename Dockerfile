@@ -8,8 +8,11 @@ RUN npm install
 
 COPY . .
 
-RUN npm run build
+EXPOSE 3000
 
-COPY .next ./.next
+# RUN npm run build
 
+# COPY .next ./.next
+
+# CMD ["npm", "run", "start"]
 CMD ["npm", "run", "dev"]
